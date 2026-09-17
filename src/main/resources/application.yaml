@@ -1,0 +1,81 @@
+spring:
+  application:
+    name: mts
+  datasource:
+    url: ${CRM_POSTGRES_URL:jdbc:postgresql://localhost:5432/mts_crm}
+    username: ${CRM_POSTGRES_USERNAME:postgres}
+    password: ${CRM_POSTGRES_PASSWORD:0f9640a4311481256172499ae1f01f6ba23c246166f68c1baf9d14c4a65ce5bc}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.transaction.jta.platform: org.hibernate.engine.transaction.jta.platform.internal.AtomikosJtaPlatform
+  mail:
+    host: ${MAIL_HOST:smtp.example.com}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USERNAME:example@example.com}
+    password: ${MAIL_PASSWORD:change-me}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+
+yookassa:
+  api-url: ${YOOKASSA_API_URL:https://api.yookassa.ru/v3}
+  shop-id: ${YOOKASSA_SHOP_ID:000000}
+  secret-key: ${YOOKASSA_SECRET_KEY:change-me}
+  capture: ${YOOKASSA_CAPTURE:true}
+  currency: ${YOOKASSA_CURRENCY:RUB}
+  return-url: ${YOOKASSA_RETURN_URL:https://example.com/payment/return}
+
+eis:
+  killbill:
+    url: ${KILLBILL_URL:http://localhost:6060}
+    api-key: ${KILLBILL_API_KEY:mts}
+    api-secret: ${KILLBILL_API_SECRET:mts-secret}
+    username: ${KILLBILL_USERNAME:admin}
+    password: ${KILLBILL_PASSWORD:password}
+    plans:
+      virtual-pbx: virtual-pbx-monthly
+      corporate-mobile: corporate-mobile-monthly
+      office-internet: office-internet-monthly
+      cloud-storage: cloud-storage-monthly
+      video-surveillance: video-surveillance-monthly
+      cybersecurity: cybersecurity-monthly
+      iot-platform: iot-platform-monthly
+      sms-campaigns: sms-campaigns-monthly
+      email-campaigns: email-campaigns-monthly
+      business-vpn: business-vpn-monthly
+      crm-system: crm-system-monthly
+      cloud-servers: cloud-servers-monthly
+      backup: backup-monthly
+      ip-phones: ip-phones-monthly
+      employee-monitoring: employee-monitoring-monthly
+      business-wifi: business-wifi-monthly
+      data-analytics: data-analytics-monthly
+      online-cash-register: online-cash-register-monthly
+      electronic-documents: electronic-documents-monthly
+      web-hosting: web-hosting-monthly
+
+app:
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    poll-timeout-ms: ${KAFKA_POLL_TIMEOUT_MS:1000}
+    client-id: ${KAFKA_CLIENT_ID:${spring.application.name}}
+  security:
+    jwt-secret: ${JWT_SECRET:change-this-lab-secret-to-at-least-32-characters}
+    jwt-ttl-minutes: ${JWT_TTL_MINUTES:60}
+  datasource:
+    payments:
+      url: ${PAYMENTS_POSTGRES_URL:jdbc:postgresql://localhost:5432/mts_payments}
+      username: ${PAYMENTS_POSTGRES_USERNAME:postgres}
+      password: ${PAYMENTS_POSTGRES_PASSWORD:0f9640a4311481256172499ae1f01f6ba23c246166f68c1baf9d14c4a65ce5bc}
+  mail:
+    from: ${APP_MAIL_FROM:no-reply@example.com}
+    analyst-email: ${APP_MAIL_ANALYST_EMAIL:analyst@example.com}
+  web:
+    cors: ${APP_CORS_ENABLE:false}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connector xmlns="https://jakarta.ee/xml/ns/jakartaee" version="2.1">
+    <display-name>Kill Bill outbound adapter</display-name>
+    <vendor-name>MTS</vendor-name>
+    <eis-type>Kill Bill</eis-type>
+    <resourceadapter-version>1.0</resourceadapter-version>
+    <resourceadapter>
+        <resourceadapter-class>me.zinch.itmo.mts.eis.KillBillResourceAdapter</resourceadapter-class>
+        <outbound-resourceadapter>
+            <connection-definition>
+                <managedconnectionfactory-class>me.zinch.itmo.mts.eis.KillBillManagedConnectionFactory</managedconnectionfactory-class>
+                <connectionfactory-interface>me.zinch.itmo.mts.eis.BillingEisConnectionFactory</connectionfactory-interface>
+                <connectionfactory-impl-class>me.zinch.itmo.mts.eis.KillBillConnectionFactory</connectionfactory-impl-class>
+                <connection-interface>me.zinch.itmo.mts.eis.BillingEisConnection</connection-interface>
+                <connection-impl-class>me.zinch.itmo.mts.eis.KillBillConnection</connection-impl-class>
+            </connection-definition>
+        </outbound-resourceadapter>
+    </resourceadapter>
+</connector>

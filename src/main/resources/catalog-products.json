@@ -1,0 +1,122 @@
+[
+  {
+    "id": "2c2ebb74-7f0b-4c20-aaf3-f138f9755a46", "code": "virtual-pbx",
+    "name": "Виртуальная АТС",
+    "description": "Облачная телефония для бизнеса с гибкой настройкой",
+    "price": 1500
+  },
+  {
+    "id": "7891394c-67bd-4102-aed5-264ef3d77509", "code": "corporate-mobile",
+    "name": "Корпоративная мобильная связь",
+    "description": "Тариф для сотрудников с пакетами минут и интернета",
+    "price": 800
+  },
+  {
+    "id": "fd3894b3-5074-4569-9404-74aac27f08a6", "code": "office-internet",
+    "name": "Интернет для офиса",
+    "description": "Высокоскоростной проводной интернет",
+    "price": 1200
+  },
+  {
+    "id": "e555cc38-812a-4be0-b6f2-d5ffa4b4c66f", "code": "cloud-storage",
+    "name": "Облачное хранилище",
+    "description": "Безопасное хранение и доступ к данным",
+    "price": 950
+  },
+  {
+    "id": "4d75904b-3484-4d75-bf91-97f109bcc7c8", "code": "video-surveillance",
+    "name": "Видеонаблюдение",
+    "description": "Система удалённого видеоконтроля",
+    "price": 2000
+  },
+  {
+    "id": "08b69d44-b8e1-435d-a29f-4c3888609e78", "code": "cybersecurity",
+    "name": "Кибербезопасность",
+    "description": "Комплексная защита IT-инфраструктуры",
+    "price": 3000
+  },
+  {
+    "id": "7429b33c-4492-4ece-b3f3-5e40418a4f50", "code": "iot-platform",
+    "name": "IoT платформа",
+    "description": "Управление устройствами интернета вещей",
+    "price": 2700
+  },
+  {
+    "id": "dcf3244b-0bda-4a1c-acde-1f689482cb15", "code": "sms-campaigns",
+    "name": "SMS-рассылки",
+    "description": "Сервис массовых уведомлений клиентам",
+    "price": 500
+  },
+  {
+    "id": "54f1b970-5b5e-4e3d-9198-32594d4148f3", "code": "email-campaigns",
+    "name": "Email-рассылки",
+    "description": "Маркетинговые email-кампании",
+    "price": 400
+  },
+  {
+    "id": "a5a82af8-f9a4-4882-95e0-bc640b27290c", "code": "business-vpn",
+    "name": "VPN для бизнеса",
+    "description": "Защищённый удалённый доступ сотрудников",
+    "price": 1100
+  },
+  {
+    "id": "10d13943-8cee-4c1e-8c1c-0e6fd392e7d8", "code": "crm-system",
+    "name": "CRM система",
+    "description": "Управление клиентской базой и продажами",
+    "price": 2200
+  },
+  {
+    "id": "9bfbe77d-2377-4f16-9d21-fe7e2cd51963", "code": "cloud-servers",
+    "name": "Облачные серверы",
+    "description": "Виртуальные машины для бизнеса",
+    "price": 3500
+  },
+  {
+    "id": "8bd07d68-ba04-4530-9ad9-1ec67ad4d55d", "code": "backup",
+    "name": "Резервное копирование",
+    "description": "Автоматический бэкап данных",
+    "price": 1300
+  },
+  {
+    "id": "5c645b56-9cc3-4e8e-9577-d87c4ffb35be", "code": "ip-phones",
+    "name": "IP-телефоны",
+    "description": "Оборудование для корпоративной связи",
+    "price": 5000
+  },
+  {
+    "id": "9abdb5d7-00fe-4315-bae6-22bb5d92846a", "code": "employee-monitoring",
+    "name": "Контроль сотрудников",
+    "description": "Система мониторинга рабочего времени",
+    "price": 1700
+  },
+  {
+    "id": "f0d8a50d-3e42-4950-beed-19b26548d9e3", "code": "business-wifi",
+    "name": "Wi-Fi для бизнеса",
+    "description": "Организация корпоративной Wi-Fi сети",
+    "price": 1400
+  },
+  {
+    "id": "0ee72e3a-ba58-4065-9cd2-2d2bd7349aba", "code": "data-analytics",
+    "name": "Аналитика данных",
+    "description": "Инструменты бизнес-аналитики",
+    "price": 2600
+  },
+  {
+    "id": "d0239808-4b78-4f91-be7f-464ca52eea74", "code": "online-cash-register",
+    "name": "Онлайн-кассы",
+    "description": "Решение для приёма платежей",
+    "price": 4800
+  },
+  {
+    "id": "795d0e18-2531-4eed-941b-1c74ff48a72e", "code": "electronic-documents",
+    "name": "Электронный документооборот",
+    "description": "Обмен документами в цифровом виде",
+    "price": 900
+  },
+  {
+    "id": "2dede89c-c492-45ab-8082-8bbd0a19a4e7", "code": "web-hosting",
+    "name": "Хостинг сайтов",
+    "description": "Размещение и поддержка веб-сайтов",
+    "price": 700
+  }
+]
